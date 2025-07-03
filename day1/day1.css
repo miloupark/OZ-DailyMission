@@ -1,0 +1,27 @@
+/* container */
+.today-wrap {
+  display: inline-block;
+  width: 400px;
+  padding: 20px 32px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+}
+
+/* title */
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #526ba6;
+}
+
+.date {
+  font-size: 14px;
+  border-left: 4px solid #526ba6;
+  padding-left: 8px;
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+}
