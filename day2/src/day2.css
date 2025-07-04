@@ -1,0 +1,49 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base */
+body {
+  font-family: "Pretendard", sans-serif;
+  padding: 20px;
+}
+
+/* header */
+.header-desc {
+  font-weight: 500;
+  padding: 12px 0;
+}
+
+/* main */
+.intro {
+  display: flex;
+  gap: 40px;
+}
+
+.info-name {
+  margin-left: -14px;
+}
+
+.info-lst {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+/* utils */
+.py-20 {
+  padding: 20px 0;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.gap-y-8 {
+  display: grid;
+  gap: 8px;
+}
