@@ -13,7 +13,7 @@
   <body>
     <div class="signup">
       <header>
-        <h1 class="txt-bold pb-24">회원가입</h1>
+        <h1 class="txt-lg pb-24">회원가입</h1>
       </header>
       <main>
         <form action="/signup" method="post" class="form">
@@ -27,14 +27,16 @@
                     type="text"
                     id="id"
                     class="input"
+                    name="id"
                     placeholder="아이디"
+                    aria-describedby="id-desc"
                     required
                   />
                   <button type="button" class="btn-verify" disabled>
                     중복확인
                   </button>
                 </div>
-                <span class="input-desc"
+                <span id="id-desc" class="input-desc"
                   >4~12자/영문 소문자(숫자 조합 가능)
                 </span>
               </li>
@@ -44,10 +46,14 @@
                   type="password"
                   id="pwd"
                   class="input"
+                  name="password"
                   placeholder="비밀번호"
+                  aria-describedby="pwd-desc"
                   required
                 />
-                <span class="input-desc">6~20자/영문 대소문자, 숫자 조합</span>
+                <span id="pwd-desc" class="input-desc"
+                  >6~20자/영문 대소문자, 숫자 조합</span
+                >
               </li>
               <li class="input-col">
                 <label for="pwd-confirm" class="label">비밀번호 확인</label>
@@ -55,6 +61,7 @@
                   type="password"
                   id="pwd-confirm"
                   class="input"
+                  name="pwd-confirm"
                   placeholder="비밀번호 확인"
                   required
                 />
@@ -71,13 +78,14 @@
                 />
               </li>
               <li>
-                <label for="email-id" class="label">이메일</label>
+                <label for="email" class="label">이메일</label>
                 <div class="input-row">
                   <input
                     type="text"
-                    id="email-id"
+                    id="email"
                     class="input"
-                    name="email-id"
+                    name="email"
+                    placeholder="example"
                     required
                   />
                   <span aria-hidden="true">@</span>
@@ -116,10 +124,24 @@
               </li>
               <li>
                 <label for="sex" class="label">성별</label>
-                <div class="input-row">
-                  <input type="radio" id="male" name="sex" />
+                <div class="input-row input-h40">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="sex"
+                    value="M"
+                    checked
+                    required
+                  />
                   <label for="male" class="label">남자</label>
-                  <input type="radio" id="female" name="sex" class="ml-20" />
+                  <input
+                    type="radio"
+                    id="female"
+                    name="sex"
+                    value="F"
+                    class="ml-20"
+                    required
+                  />
                   <label for="female" class="label">여자</label>
                 </div>
               </li>

@@ -3,9 +3,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
 }
 a {
+  text-decoration: none;
   color: inherit;
 }
 ul,
@@ -13,8 +13,9 @@ li {
   list-style: none;
 }
 button {
-  all: unset;
-  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
 }
 fieldset {
   border: none;
@@ -37,10 +38,14 @@ input[type="checkbox"]:hover {
   accent-color: var(--primary);
 }
 input[type="radio"] {
-  height: 40px;
   transform: scale(1.2);
   cursor: pointer;
   accent-color: var(--primary);
+}
+
+button:focus {
+  outline: 2px solid var(--primary-dark);
+  outline-offset: 2px;
 }
 
 /* color variables */
@@ -60,6 +65,7 @@ input[type="radio"] {
 body {
   font-family: "Pretendard", sans-serif;
   padding: 40px;
+  color: var(--black);
   background-color: var(--primary-dark);
 }
 
@@ -122,7 +128,6 @@ body {
   padding: 0 12px;
   border-radius: 6px;
   font-size: 14px;
-  outline: none;
   transition: border 0.2s ease;
 }
 
@@ -134,7 +139,7 @@ body {
   display: block;
   font-size: 14px;
   padding-bottom: 2px;
-  color: var(--gray-700);
+  color: var(--black);
 }
 
 .input-desc {
@@ -152,6 +157,10 @@ body {
 .input-col {
   display: flex;
   flex-direction: column;
+}
+
+.input-h40 {
+  height: 40px;
 }
 
 /* link */
@@ -188,6 +197,7 @@ button:disabled {
 
 .btn-verify {
   width: 80px;
+  flex-shrink: 0;
   color: var(--white);
   background-color: var(--primary);
 }
@@ -210,6 +220,7 @@ button:disabled {
 
 .txt-lg {
   font-size: 24px;
+  font-weight: 600;
 }
 
 .pt-12 {
