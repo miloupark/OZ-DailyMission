@@ -1,0 +1,171 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Pretendard", sans-serif;
+  line-height: 1.6;
+}
+
+/* color variables */
+:root {
+  --bg-nav: #dbeaff;
+  --bg-sec1: papayawhip;
+  --bg-sec2: #3d3323;
+  --bg-sec3: #b9cfff;
+  --bg-btn: orange;
+}
+
+/* layout */
+.layout {
+  position: relative;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--bg-nav);
+}
+
+#in_header {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+#logo > a {
+  display: flex;
+  align-content: center;
+  width: 120px;
+  height: 100%;
+  display: block;
+  padding: 20px;
+}
+
+#gnb {
+  width: 100%;
+  height: 100%;
+}
+
+#gnb > ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+#gnb > ul > li {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* section */
+#section_1 {
+  width: 100%;
+  height: 600px;
+  background-color: var(--bg-sec1);
+}
+
+#section_2 {
+  background-color: var(--bg-sec2);
+  padding: 40px 0;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.circle {
+  width: 120px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: var(--bg-sec1);
+}
+
+.circle:nth-last-child(1) {
+  margin-right: 0;
+}
+
+#section_3 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-sec3);
+}
+
+.con_wrap {
+  margin-right: 60px;
+}
+
+.con_wrap:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.con_wrap > li {
+  width: 100px;
+  height: 100px;
+}
+
+.con_wrap .long_box {
+  width: 300px;
+  background-color: aquamarine;
+}
+
+.con_wrap .m_box {
+  width: 80px;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+/* button */
+#top_btn {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  color: var(--bg-sec2);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50%;
+  border: 2px solid var(--bg-sec2);
+  background-color: var(--bg-btn);
+}
+
+#top_btn {
+  display: block;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/pretendard@1.3.8/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./src/chat.css" />
+  </head>
+  <body>
+    <div class="chat">
+      <!-- header -->
+      <header class="chat-header">
+        <h1 class="a11y-hidden">채팅방 ui</h1>
+        <button type="button" class="btn">
+          <img
+            src="./src/images/ico_chevron-left.svg "
+            alt="친구 목록으로
+          뒤로가기"
+          />
+        </button>
+        <h2 class="user-name">김햄찌</h2>
+        <button type="button" class="btn">
+          <img src="./src/images/ico_ellipsis-vertical.svg" alt="채팅방 설정" />
+        </button>
+      </header>
+      <!-- chat screen -->
+      <div class="chat-cont">
+        <p class="chat-date"><time datetime="2025-07-09">2025.07.09</time></p>
+        <div class="msg-row-r">
+          <div class="msg-bubble-r">
+            <p class="msg-txt-r">안녕하세욤 👋🏻</p>
+            <p class="chat-time">
+              <time datetime="2025-07-09T11:33">오전 11:33</time>
+            </p>
+          </div>
+          <img
+            src="./src/images/user.png"
+            alt="김햄찌 프로필 사진"
+            class="user-img"
+          />
+        </div>
+        <div class="msg-row-r">
+          <div class="msg-bubble-r">
+            <p class="msg-txt-r">무엇을 도와드릴까햄?</p>
+            <p class="chat-time">
+              <time datetime="2025-07-09T11:33">오전 11:33</time>
+            </p>
+          </div>
+          <img
+            src="./src/images/user.png"
+            alt="김햄찌 프로필 사진"
+            class="user-img"
+          />
+        </div>
+      </div>
+      <!-- chat input -->
+      <form class="chat-input">
+        <button type="button" class="btn" aria-label="사진첩 첨부">
+          <img src="./src/images/ico_image.svg" alt="사진첩 아이콘" />
+        </button>
+        <label for="message" class="a11y-hidden">메시지 입력</label>
+        <input
+          id="message"
+          type="text"
+          name="message"
+          placeholder="메시지를 입력하세요."
+          class="input"
+        />
+        <button type="submit" class="btn" aria-label="메시지 보내기">
+          <img src="./src/images/ico_send.svg" alt="메세지 보내기" />
+        </button>
+      </form>
+    </div>
+    <script>
+      //  채팅 하단으로 스크롤하여 최신 메세지 보이도록 함
+      const chatCont = document.querySelector(".chat-cont");
+      function scrollToBottom() {
+        chatCont.scrollTop = chatCont.scrollHeight;
+      }
+
+      scrollToBottom();
+    </script>
+  </body>
+</html>

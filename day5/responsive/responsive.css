@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .signup {
+    max-width: 768px;
+    min-width: 375px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    justify-content: space-between;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .lst {
+    gap: 24px;
+  }
+
+  .link {
+    white-space: nowrap;
+  }
+}
