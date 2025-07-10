@@ -1,0 +1,34 @@
+.banner {
+  max-width: 100rem;
+  height: 14rem;
+  justify-content: space-between;
+  align-items: end;
+  margin: 4rem auto 0;
+  padding: 2.4rem;
+  background-color: #27272e;
+  border-radius: 0.8rem;
+}
+
+.banner__text {
+  color: #6da5ff;
+}
+
+.banner__tit {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.banner__subtit {
+  padding-top: 0.6rem;
+}
+
+.banner__btn {
+  width: 6rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid #85b4fe;
+  background-color: #6da5ff;
+  cursor: pointer;
+}

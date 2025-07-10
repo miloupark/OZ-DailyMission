@@ -1,0 +1,67 @@
+.notice {
+  padding: 8rem 2rem;
+  background-color: #121212;
+}
+
+.notice__tit {
+  max-width: 100rem;
+  margin: auto;
+  color: #eeeeee;
+  padding-bottom: 4rem;
+}
+
+.notice__container {
+  max-width: 100rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  gap: 2rem;
+}
+
+.notice__item {
+  padding: 1.2rem;
+  gap: 2rem;
+  flex-basis: 48%;
+}
+
+.notice__thumb {
+  min-width: 10rem;
+  min-height: 10rem;
+  background: transparent url("../images/ico_sparkles.png") center/contain
+    no-repeat;
+}
+
+.notice__cont {
+  display: grid;
+  gap: 0.8rem;
+  color: #eeeeee;
+}
+
+.notice__cont-tit {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.notice__cont-desc {
+  max-width: 40rem;
+  height: 4rem;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notice__cont-tag {
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 948px) {
+  .notice__container {
+    display: grid;
+    margin: 0 4rem;
+    gap: 2rem;
+  }
+
+  .notice__cont-desc {
+    max-width: 100%;
+  }
+}

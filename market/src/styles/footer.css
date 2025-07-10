@@ -1,0 +1,61 @@
+.footer {
+  background-color: #121212;
+  padding: 8rem 2rem 4rem;
+}
+
+.footer__container {
+  max-width: 100rem;
+  margin: auto;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.footer__apps {
+  justify-content: center;
+}
+
+.footer__appdown {
+  padding-bottom: 1.2rem;
+  color: #cccccc;
+}
+
+.footer__appbtn {
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.footer__appbtn button {
+  height: 3rem;
+  border: none;
+  padding: 0.8rem;
+  color: #cccccc;
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.footer__appbtn button:hover {
+  color: #6da5ff;
+}
+
+.footer__nav {
+  align-items: flex-start;
+  gap: 6rem;
+  color: #cccccc;
+}
+
+.footer__nav ul {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.footer__nav ul li {
+  cursor: pointer;
+}
+
+.footer__nav ul li:hover {
+  color: #6da5ff;
+}
